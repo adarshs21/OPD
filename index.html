@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Bed Booking</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#" class="btn-primary">Request Appointment</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="top-section">
+        <div class="hero-text">
+            <h1>Your Doctor is Here</h1>
+            <p>We provide top-notch healthcare services, ensuring every patient gets the best treatment.</p>
+            <button class="btn-primary">Explore Services</button>
+        </div>
+        <div class="bed-overview">
+            <h2>Bed Availability Overview</h2>
+            <div class="department">
+                <h3>General Medicine</h3>
+                <div class="bed-info">
+                    <div class="bed-box available-box">10/20</div>
+                    <div class="bed-box occupied-box">10/20</div>
+                </div>
+                <p>Charges:  per day</p>
+            </div>
+            <div class="department">
+                <h3>Surgery</h3>
+                <div class="bed-info">
+                    <div class="bed-box available-box">5/15</div>
+                    <div class="bed-box occupied-box">10/15</div>
+                </div>
+                <p>Charges: $200 per day</p>
+            </div>
+        </div>
+        <div class="booking-form">
+            <h2>Book a Bed</h2>
+            <form id="bookingForm">
+                <label for="phone">Phone Number:</label>
+                <input type="text" id="phone" name="phone" required>
+                <label for="uid">UID:</label>
+                <input type="text" id="uid" name="uid" required>
+                <button type="submit" class="btn-primary">Book Bed</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Hospital. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
